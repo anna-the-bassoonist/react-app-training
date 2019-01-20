@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {Component } from 'react';
 
 
-const Menu = () => ( 
-    <Menu>
+class Menu extends Component {
+    render(){
+        return(
+    <Menu className="Menu">
     <Menu.Item>
     Home 
     </Menu.Item> 
@@ -15,7 +17,9 @@ const Menu = () => (
     <Menu.Item>
     Cards 
     </Menu.Item> 
-    </Menu >
-);
+    </Menu>
+            );
+    }
+}
 
 export default Menu;
