@@ -1,20 +1,24 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Header from './Header';
 import Button from './Button';
 import Images from './Images';
+import Card from './Card';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-        </header>
-<Header name="Anna"/>
+        <Header name="Anna"/>
         <Button />
+        <hr/> 
         <Images />
+        <hr/> 
+        <Card 
+            header='Kathrina Novak'
+            meta='Friend'
+            decscription='Kathrina is a ....'
+        />
          </div>
     );
   }
