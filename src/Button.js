@@ -24,7 +24,7 @@ class MoreLess extends Component {
         this.setState( {
             counter:this.state.counter = 0
         })
-    };
+    }
     
     
     render() {

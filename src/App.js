@@ -10,6 +10,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header name="Anna"/>
+        <Header name="Franzi"/>
         <Button />
         <hr/> 
         <Images />
