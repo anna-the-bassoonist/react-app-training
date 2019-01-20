@@ -1,6 +1,6 @@
 import React from 'react'
 import { Image } from 'semantic-ui-react'
-//import tree-736877_640 from './img'
+//import tree-736877_640 from './img/tree-736877_640'
 
 const ImageExampleImage = () => 
 <div>
