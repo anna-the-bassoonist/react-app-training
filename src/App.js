@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Menu from './Menu';
 import Header from './Header';
 import Button from './Button';
 import Images from './Images';
@@ -9,6 +10,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Menu />
         <Header name="Anna"/>
         <Header name="Franzi"/>
         <Button />
