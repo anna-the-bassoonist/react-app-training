@@ -10,7 +10,7 @@ const extra = (
 
 const CardExampleCardProps = (props) => (
 <Card
-    image='https://cdn.pixabay.com/photo/2018/11/15/22/52/wolf-3818343_960_720.jpg'
+    image={props.image}
     header={props.header}
     meta={props.meta}
     decscription={props.description}

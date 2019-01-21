@@ -20,18 +20,21 @@ class MenuExampleBasic extends Component {
     </Menu.Item> 
     <Menu.Item
     name='form'
+    active={activeItem==='form'}
     onClick={this.handleItemClick}
     >
     Form 
     </Menu.Item> 
     <Menu.Item
     name='images'
+    active={activeItem === 'images'}
     onClick={this.handleItemClick}
     >
     Images 
     </Menu.Item> 
     <Menu.Item
     name='cards'
+    active={activeItem==='cards'}
     onClick={this.handleItemClick}
     >
     Cards 
