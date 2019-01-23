@@ -22,7 +22,7 @@ class MoreLess extends Component {
     }
     resetNumber = () => {
         this.setState( {
-            counter:this.state.counter = 0
+            counter:0
         })
     }
     

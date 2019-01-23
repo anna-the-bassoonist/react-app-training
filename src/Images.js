@@ -1,13 +1,15 @@
 import React from 'react'
 import { Image } from 'semantic-ui-react'
-//import tree-736877_640 from './img/tree-736877_640'
+import flower from './img/flower.jpg'
+import lion from './img/lion.jpg'
+import tree from './img/tree.jpg'
 
 const ImageExampleImage = () => 
 <div>
-<Image src="/img/flower-3876195_640.jpg" />
-<Image src="/img/lion-3372720_640.jpg" />
-<Image src={"/img/tree-736877_640.jpg"} />
-<Image src="https://cdn.pixabay.com/photo/2018/05/03/22/34/lion-3372720_960_720.jpg" size="small"/>
+<Image src={flower} />
+<Image src={lion} />
+<Image src={tree} />
+
 </div>
 
     

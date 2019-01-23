@@ -6,6 +6,8 @@ import Container from './Container';
 import Button from './Button';
 import Images from './Images';
 import Card from './Card';
+import wolf from './img/wolf.jpg'
+import wolfe from './img/wolfe.jpg'
 
 class App extends Component {
   render() {
@@ -19,16 +21,16 @@ class App extends Component {
         <hr/> 
         <Images />
         <hr/> 
-        <Card          image='https://cdn.pixabay.com/photo/2018/11/15/22/52/wolf-3818343_960_720.jpg'
+        <Card          
+            image={wolf}
             header='Kathrina Novak'
             meta='Friend'
             decscription='Kathrina is a ....'
         />
         <Card
-           image= 'https://cdn.pixabay.com/photo/2015/05/15/14/54/channel-768762_960_720.jpg'
+            image={wolfe}
             header='Alexandra Gol'
-            meta='Friend'
-           
+            meta='Friend'          
         />
          </div>
     );
