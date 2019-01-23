@@ -4,13 +4,14 @@ import flower from './img/flower.jpg'
 import lion from './img/lion.jpg'
 import tree from './img/tree.jpg'
 
-const ImageExampleImage = () => 
+const ImageExampleGroupSize = () => (
 <div>
-<Image src={flower} />
-<Image src={lion} />
-<Image src={tree} />
-
+   <Image.Group size='medium'>
+        <Image src={flower} />
+        <Image src={lion} />
+        <Image src={tree} />
+   </Image.Group>
 </div>
+) 
 
-    
-export default ImageExampleImage
+export default ImageExampleGroupSize
