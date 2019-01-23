@@ -13,7 +13,7 @@ const CardExampleCardProps = (props) => (
     image={props.image}
     header={props.header}
     meta={props.meta}
-    decscription={props.description}
+    decsription={props.description}
     extra={extra}
 />
 )
