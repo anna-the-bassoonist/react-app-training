@@ -1,42 +1,42 @@
-import React, {Component} from 'react'
-import './App.css'
-import Menu from './Menu'
-import Header from './Header'
-import Container from './Container'
-import ImageExtra from './imageE/ImageExtra'
-import Button from './Button'
-import Images from './Images'
+import React, { Component } from 'react';
+import './App.css';
+import Menu from './Menu';
+import Header from './Header';
+import Container from './Container';
+import ImageExtra from './imageE/ImageExtra';
+import Button from './Button';
+import Images from './Images';
 import Card from './Card';
-import wolf from './img/wolf.jpg'
-import wolfe from './img/wolfe.jpg'
+import wolf from './img/wolf.jpg';
+import wolfe from './img/wolfe.jpg';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Menu />
-        <Header name=""/>
+        <Header name="" />
         <Container />
-        <hr/> 
+        <hr />
         <ImageExtra
-            hidden='true'
+          hidden="true"
         />
         <Button />
-        <hr/> 
+        <hr />
         <Images />
-        <hr/> 
-        <Card          
-            image={wolf}
-            header='Kathrina Novak'
-            meta='Friend'
-            description='Kathrina is a ....'
+        <hr />
+        <Card
+          description="Kathrina is a ...."
+          header="Kathrina Novak"
+          image={wolf}
+          meta="Friend"
         />
         <Card
-            image={wolfe}
-            header='Alexandra Kowal'
-            meta='Friend'          
+          header="Alexandra Kowal"
+          image={wolfe}
+          meta="Friend"
         />
-         </div>
+      </div>
     );
   }
 }
