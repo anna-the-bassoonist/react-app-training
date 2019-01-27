@@ -10,34 +10,36 @@ class MenuExampleBasic extends Component {
     render() {
       const { activeItem } = this.state;
       return (
-        <Menu className="Menu">
+        <Menu className="Menu" color="orange" fixed="top" fluid widths={4}>
           <Menu.Item
             active={activeItem === 'home'}
+            href="/home"
             name="home"
             onClick={this.handleItemClick}
           >
     Home
           </Menu.Item>
           <Menu.Item
-            active={activeItem === 'form'}
-            name="form"
+            active={activeItem === 'buttons'}
+            href="/buttons"
+            name="buttons"
             onClick={this.handleItemClick}
           >
-    Form
+    Buttons
           </Menu.Item>
           <Menu.Item
             active={activeItem === 'images'}
             name="images"
             onClick={this.handleItemClick}
           >
-    Images
+    Cards
           </Menu.Item>
           <Menu.Item
             active={activeItem === 'cards'}
             name="cards"
             onClick={this.handleItemClick}
           >
-    Cards
+    Text
           </Menu.Item>
         </Menu>
       );

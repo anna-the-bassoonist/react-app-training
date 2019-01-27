@@ -9,7 +9,7 @@ import Images from './Images';
 import Card from './Card';
 import wolf from './img/wolf.jpg';
 import wolfe from './img/wolfe.jpg';
-import Grid from './Grid.js';
+import Text from './Grid.js';
 
 class App extends Component {
   render() {
@@ -38,7 +38,7 @@ class App extends Component {
           meta="Friend"
         />
         <hr />
-        <Grid />
+        <Text />
       </div>
     );
   }

@@ -2,7 +2,7 @@ import React from 'react';
 import { Image } from 'semantic-ui-react';
 import jednorozec from '../img/jednorozec.jpg';
 import './ImageExtra.css';
-import Button from '../Button';
+// import Button from '../Button';
 
 
 const ImageExampleImage = props =>
