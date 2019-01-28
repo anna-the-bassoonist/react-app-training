@@ -12,6 +12,19 @@ import wolfe from './img/wolfe.jpg';
 import Text from './Grid.js';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      clicks: 0,
+    };
+  }
+
+
+  handleClick = () => {
+    this.setState({
+      clicks: this.state.clicks + 1,
+    });
+  }
   render() {
     return (
       <div className="App">
@@ -22,7 +35,7 @@ class App extends Component {
         <ImageExtra
           hidden="true"
         />
-        <Button />
+        <Button clicks={this.state.clicks} onClick={this.handleClick} />
         <hr />
         <Images />
         <hr />
