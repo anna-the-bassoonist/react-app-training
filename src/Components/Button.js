@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Button } from 'semantic-ui-react';
 
 
@@ -40,6 +41,8 @@ class MoreLess extends Component {
       );
     }
 }
-
+MoreLess.PropTypes = {
+  clicks: PropTypes.number,
+}
 export default MoreLess;
 

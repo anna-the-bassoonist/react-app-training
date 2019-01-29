@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Image } from 'semantic-ui-react';
 import jednorozec from '../img/jednorozec.jpg';
 import './Unicorn.css';
@@ -12,5 +13,7 @@ const ImageExampleImage = (props) => {
   );
 };
 
-
+ImageExampleImage.PropTypes= {
+  clicks: PropTypes.number,
+}
 export default ImageExampleImage;
