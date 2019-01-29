@@ -10,16 +10,19 @@ class MoreLess extends Component {
     };
   }
     increaseNumber = () => {
+      this.props.onClick();
       this.setState({
         counter: this.state.counter + 1,
       });
     }
     reduceNumber = () => {
+      this.props.onClick();
       this.setState({
         counter: this.state.counter - 1,
       });
     }
     resetNumber = () => {
+      this.props.onClick();
       this.setState({
         counter: 0,
       });

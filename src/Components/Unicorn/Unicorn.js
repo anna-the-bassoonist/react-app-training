@@ -1,11 +1,16 @@
 import React from 'react';
 import { Image } from 'semantic-ui-react';
 import jednorozec from '../img/jednorozec.jpg';
-import './ImageExtra.css';
+import './Unicorn.css';
 // import Button from '../Button';
 
 
-const ImageExampleImage = props =>
-  <Image centered="true" className="padding" hidden={props.hidden} size="big" src={jednorozec} />;
+const ImageExampleImage = (props) => {
+  return (
+    <Image centered="true" className="padding" hidden={props.clicks} size="big" src={jednorozec} />
+
+  );
+};
+
 
 export default ImageExampleImage;

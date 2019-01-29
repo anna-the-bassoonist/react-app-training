@@ -3,13 +3,13 @@ import './App.css';
 import Menu from './Menu';
 import Header from './Header';
 import Container from './Container';
-import ImageExtra from './imageE/ImageExtra';
+import Unicorn from './Unicorn/Unicorn';
 import Button from './Button';
 import Images from './Images';
 import Card from './Card';
 import wolf from './img/wolf.jpg';
 import wolfe from './img/wolfe.jpg';
-import Text from './Grid.js';
+import Text from './Grid';
 
 class App extends Component {
   constructor(props) {
@@ -32,10 +32,11 @@ class App extends Component {
         <Header name="" />
         <Container />
         <hr />
-        <ImageExtra
+        {/* <Unicorn
           hidden="true"
-        />
+        /> */}
         <Button clicks={this.state.clicks} onClick={this.handleClick} />
+        {this.state.clicks >= 10 ? <Unicorn /> : 'click 10 times to see what happens :)'}
         <hr />
         <Images />
         <hr />
@@ -52,6 +53,7 @@ class App extends Component {
         />
         <hr />
         <Text />
+
       </div>
     );
   }
