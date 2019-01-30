@@ -4,9 +4,13 @@ import Form from '../Components/Form';
 
 const Contact = () => (
   <div className="Contact">
+    <br />
     <Grid />
     <hr />
+    <br />
     <Form />
+    <br />
+    <br />
   </div>
 );
 

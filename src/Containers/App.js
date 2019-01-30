@@ -1,4 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+} from 'react-router-dom';
 import './App.css';
 import Menu from '../Components/Menu';
 import Home from './Home';
@@ -6,22 +11,30 @@ import Events from './Events';
 import Cards from './Cards';
 import Contact from './Contact';
 
-const App = () => (
-  <div className="App">
-    <Menu />
-    <Home />
-    <hr />
-    <Events />
-    {/* <Unicorn
+class App extends Component {
+  render() {
+    return (
+      <Router>
+        <div className="App">
+          <Menu />
+          <br />
+          <br />
+          <br />
+          <Switch>
+            <Route component={Home} exact path="/" />
+            <Route component={Events} path="/events" />
+            <Route component={Cards} path="/cards" />
+            <Route component={Contact} path="/contact" />
+          </Switch>          
+          {/* <Unicorn
           hidden="true"
         /> */}
-    <hr />
-    <Cards />
-    <hr />
-    <Contact />
+        </div>
+      </Router>
+    );
+  }
+}
 
-  </div>
-);
 
 export default App;
 
