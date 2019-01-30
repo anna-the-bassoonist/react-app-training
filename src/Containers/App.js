@@ -4,7 +4,7 @@ import Menu from '../Components/Menu';
 import Home from './Home';
 import Events from './Events';
 import Cards from './Cards';
-import Text from '../Components/Grid';
+import Contact from './Contact';
 
 const App = () => (
   <div className="App">
@@ -18,7 +18,7 @@ const App = () => (
     <hr />
     <Cards />
     <hr />
-    <Text />
+    <Contact />
 
   </div>
 );
