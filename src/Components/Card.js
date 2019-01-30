@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Icon } from 'semantic-ui-react';
+import { Card, Icon, CardGroup } from 'semantic-ui-react';
 
 const extra = (
   <a href="google.pl">
@@ -9,13 +9,15 @@ const extra = (
 );
 
 const CardExampleCardProps = props => (
-  <Card
-    decsription={props.description}
-    extra={extra}
-    header={props.header}
-    image={props.image}
-    meta={props.meta}
-  />
+  <CardGroup itemsPerRow={2}>
+    <Card
+      decsription={props.description}
+      extra={extra}
+      header={props.header}
+      image={props.image}
+      meta={props.meta}
+    />
+  </CardGroup>
 );
 
 export default CardExampleCardProps;

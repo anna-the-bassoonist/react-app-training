@@ -20,12 +20,12 @@ class MenuExampleBasic extends Component {
     Home
           </Menu.Item>
           <Menu.Item
-            active={activeItem === 'buttons'}
-            href="/buttons"
-            name="buttons"
+            active={activeItem === 'Events'}
+            href="/events"
+            name="events"
             onClick={this.handleItemClick}
           >
-    Buttons
+    Events
           </Menu.Item>
           <Menu.Item
             active={activeItem === 'images'}

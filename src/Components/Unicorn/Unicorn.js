@@ -15,5 +15,5 @@ const ImageExampleImage = (props) => {
 
 ImageExampleImage.PropTypes= {
   clicks: PropTypes.number,
-}
+};
 export default ImageExampleImage;
