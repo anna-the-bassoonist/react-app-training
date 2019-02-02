@@ -14,38 +14,38 @@ class MenuExampleBasic extends Component {
         <Menu className="Menu" color="orange" fixed="top" fluid widths={4}>
           <Menu.Item
             active={activeItem === 'home'}
-            href="/"
+            as={Link}
             name="home"
             onClick={this.handleItemClick}
+            to="/"
           >
-            {/* <Link to="/">Home</Link> */}
           </Menu.Item>
 
           <Menu.Item
             active={activeItem === 'events'}
-            href="/events"
+            as={Link}
             name="events"
             onClick={this.handleItemClick}
+            to="/events"
           >
-            {/* <Link to="/events">Events</Link> */}
           </Menu.Item>
 
           <Menu.Item
             active={activeItem === 'cards'}
-            href="/cards"
+            as={Link}
             name="cards"
             onClick={this.handleItemClick}
+            to="/cards"
           >
-            {/* <Link to="/cards">Cards</Link> */}
           </Menu.Item>
 
           <Menu.Item
             active={activeItem === 'contact'}
-            href="/contact"
+            as={Link}
             name="contact"
             onClick={this.handleItemClick}
+            to="/contact"
           >
-            {/* <Link to="/contact">Contact</Link> */}
           </Menu.Item>
         </Menu>
       );
