@@ -42,7 +42,8 @@ class MoreLess extends Component {
     }
 }
 MoreLess.propTypes = {
-  clicks: PropTypes.number,
+  clicks: PropTypes.number.isRequired,
+  onClick: PropTypes.func.isRequired,
 };
 export default MoreLess;
 

@@ -6,14 +6,12 @@ import './Unicorn.css';
 // import Button from '../Button';
 
 
-const ImageExampleImage = (props) => {
-  return (
-    <Image centered="true" className="padding" hidden={props.clicks} size="big" src={jednorozec} />
+const ImageExampleImage = props => (
+  <Image centered="true" className="padding" hidden={props.clicks} size="big" src={jednorozec} />
 
-  );
-};
+);
 
-ImageExampleImage.PropTypes= {
-  clicks: PropTypes.number,
+ImageExampleImage.propTypes = {
+  clicks: PropTypes.number.isRequired,
 };
 export default ImageExampleImage;
