@@ -41,7 +41,7 @@ class MoreLess extends Component {
       );
     }
 }
-MoreLess.PropTypes = {
+MoreLess.propTypes = {
   clicks: PropTypes.number,
 };
 export default MoreLess;
